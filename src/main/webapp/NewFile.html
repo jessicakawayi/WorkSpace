@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+   #a2{
+   width: 100px;
+   height: 100px;
+   background-color: #00ffff;
+   position:absolute;
+   top:50px;
+   left:100px;
+   }
+</style>
+<link rel="stylesheet" href="css/responsive-nav.css">
+<script src="js/responsive-nav.js"></script>
+<link rel="stylesheet" href="css/styles.css">
+<script>
+/* function a(id){
+	return document.getElementById(id);
+	var aa = document.getElementById("a1");
+     var aaa = document.getElementById("a2");
+     if(document.getElementById(id)=="a1")
+     a("a1").onclick=function(){
+			my("a2").style.display="none";
+		}
+		my("btn1").onclick=function(){
+			my("dv").style.display="block";
+		}
+
+} */
+function a(){
+	var aa = document.getElementById("a1");
+    var aaa = document.getElementById("a2");
+    aa.style.display="none";
+    aaa.style.display = "block";
+}
+function a1(){
+	var aa = document.getElementById("a1");
+    var aaa = document.getElementById("a2");
+    aa.style.display="block";
+    aaa.style.display = "none";
+}
+</script>
+
+
+</head>
+<body>
+	  <div role="navigation" id="nav">
+		<ul>
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#" onclick="a()">About</a></li>
+			<li><a href="#" onclick="a1()">Projects</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</div>
+	<div id="a1">11111</div>
+	<div id="a2">dsgsbfb</div>
+
+</body>
+</html>
